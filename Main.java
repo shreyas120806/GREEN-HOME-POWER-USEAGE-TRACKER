@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class PowerLog {   // ✅ No public keyword here
+class PowerLog {   //  No public keyword here
     private String applianceName;
     private double powerInWatts;
     private double durationInHours;
@@ -24,7 +24,7 @@ class PowerLog {   // ✅ No public keyword here
     }
 }
 
-public class Main {  // ✅ Programiz needs this class name
+public class Main {  //  Programiz needs this class name
     private List<PowerLog> usageLogs;
 
     public Main() {
@@ -33,7 +33,7 @@ public class Main {  // ✅ Programiz needs this class name
 
     public void addLog(PowerLog log) {
         usageLogs.add(log);
-        System.out.println("✅ Log added successfully!");
+        System.out.println(" Log added successfully!");
     }
 
     public void showLogs() {
@@ -52,16 +52,16 @@ public class Main {  // ✅ Programiz needs this class name
         for (PowerLog log : usageLogs) {
             totalEnergy += log.getEnergyInKWh();
         }
-        System.out.println("\n🔋 Total Energy Consumed: " +
+        System.out.println("\n Total Energy Consumed: " +
                            String.format("%.2f", totalEnergy) + " kWh");
 
         // Eco suggestion
         if (totalEnergy > 10) {
-            System.out.println("🌿 Tip: High usage! Try using energy-efficient appliances.");
+            System.out.println(" Tip: High usage! Try using energy-efficient appliances.");
         } else if (totalEnergy > 5) {
-            System.out.println("🌿 Tip: Moderate usage. Remember to switch off unused devices.");
+            System.out.println(" Tip: Moderate usage. Remember to switch off unused devices.");
         } else {
-            System.out.println("🌿 Great job! Your energy usage is eco-friendly.");
+            System.out.println(" Great job! Your energy usage is eco-friendly.");
         }
     }
 
@@ -100,14 +100,15 @@ public class Main {  // ✅ Programiz needs this class name
                     break;
 
                 case 4:
-                    System.out.println("Exiting... Stay eco-friendly! 🌍");
+                    System.out.println("Exiting... Stay eco-friendly! ");
                     break;
 
                 default:
-                    System.out.println("❌ Invalid choice! Try again.");
+                    System.out.println(" Invalid choice! Try again.");
             }
         } while (choice != 4);
 
         scanner.close();
     }
 }
+
